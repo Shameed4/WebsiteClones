@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { PanelLeftOpen, SquarePen } from "lucide-react";
+import { PanelLeftOpen, SquarePen, Image, PenLine } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -29,11 +28,11 @@ export default function Home() {
           <Textarea placeholder="Message ChatGPT" className="resize-none"></Textarea>
         </div>
         <div className="flex gap-2 justify-center">
-          <Button variant="outline" className="font-normal text-gray-700 rounded-full">Create image</Button>
+          <Button variant="outline" className="font-normal text-gray-700 rounded-full"><Image />Create image</Button>
           <Button variant="outline" className="font-normal text-gray-700 rounded-full">Code</Button>
           <Button variant="outline" className="font-normal text-gray-700 rounded-full">Brainstorm</Button>
-          <Button variant="outline" className="font-normal text-gray-700 rounded-full">Analyze images</Button>
-          <Button variant="outline" className="font-normal text-gray-700 rounded-full">Help me write</Button>
+          <Button variant="outline" className="font-normal text-gray-700 rounded-full"><ChartColumnBig />Analyze data</Button>
+          <Button variant="outline" className="font-normal text-gray-700 rounded-full"><PenLine />Help me write</Button>
           <Button variant="outline" className="font-normal text-gray-700 rounded-full">More</Button>
         </div>
       </div>
