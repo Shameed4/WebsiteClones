@@ -20,7 +20,7 @@ export default function Home() {
   const [sidebar, setSidebar] = useState(true);
   return (
     <div className="flex">
-      {<Sidebar sidebar={sidebar} setSidebar={setSidebar} />}
+      <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
       <div className="h-screen flex flex-col m-0 p-0 w-full justify-between">
         <header className="flex p-3 text-xl">
           {
@@ -42,7 +42,8 @@ export default function Home() {
               <DropdownMenuItem>Temporary chat</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="ghost" className="ml-auto text-xl">User</Button>
+          <Button className="rounded-full ml-auto">Log in</Button>
+          <Button className="rounded-full ml-2 bg-white border-[1px] border-neutral-300 text-black shadow-none">Sign up</Button>
         </header>
 
         <div className="w-full max-w-3xl m-auto">

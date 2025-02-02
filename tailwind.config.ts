@@ -11,7 +11,7 @@ export default {
   	extend: {
   		colors: {
 			neutral: {
-				50: '#f7f7f7'
+				50: '#f9f9f9'
 			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
